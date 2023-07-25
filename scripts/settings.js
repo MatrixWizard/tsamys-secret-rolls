@@ -1,6 +1,6 @@
 export const registerSettings = function() {
-  console.log("I AM HERE")
-  game.settings.register("Tsamys-Secret-Rolls", "hideAcrobatics", {
+
+  game.settings.register("tsamys-secret-rolls", "hideAcrobatics", {
     name: "Hide Acrobatics",
     scope: "world",
     config: true,
@@ -8,7 +8,7 @@ export const registerSettings = function() {
     type: Boolean
   });
 
-  game.settings.register("Tsamys-Secret-Rolls", "hideArcana", {
+  game.settings.register("tsamys-secret-rolls", "hideArcana", {
     name: "Hide Arcana",
     scope: "world",
     config: true,
@@ -16,7 +16,7 @@ export const registerSettings = function() {
     type: Boolean
   });
 
-  game.settings.register("Tsamys-Secret-Rolls", "hideAthletics", {
+  game.settings.register("tsamys-secret-rolls", "hideAthletics", {
     name: "Hide Athletics",
     scope: "world",
     config: true,
@@ -24,7 +24,7 @@ export const registerSettings = function() {
     type: Boolean
   });
 
-  game.settings.register("Tsamys-Secret-Rolls", "hideCrafting", {
+  game.settings.register("tsamys-secret-rolls", "hideCrafting", {
     name: "Hide Crafting",
     scope: "world",
     config: true,
@@ -32,7 +32,7 @@ export const registerSettings = function() {
     type: Boolean
   });
 
-  game.settings.register("Tsamys-Secret-Rolls", "hideDeception", {
+  game.settings.register("tsamys-secret-rolls", "hideDeception", {
     name: "Hide Deception",
     scope: "world",
     config: true,
@@ -40,7 +40,7 @@ export const registerSettings = function() {
     type: Boolean
   });
 
-  game.settings.register("Tsamys-Secret-Rolls", "hideDiplomacy", {
+  game.settings.register("tsamys-secret-rolls", "hideDiplomacy", {
     name: "Hide Diplomacy",
     scope: "world",
     config: true,
@@ -48,7 +48,7 @@ export const registerSettings = function() {
     type: Boolean
   });
 
-  game.settings.register("Tsamys-Secret-Rolls", "hideIntimidation", {
+  game.settings.register("tsamys-secret-rolls", "hideIntimidation", {
     name: "Hide Intimidation",
     scope: "world",
     config: true,
@@ -56,7 +56,7 @@ export const registerSettings = function() {
     type: Boolean
   });
 
-  game.settings.register("Tsamys-Secret-Rolls", "hideLore", {
+  game.settings.register("tsamys-secret-rolls", "hideLore", {
     name: "Hide Lore",
     scope: "world",
     config: true,
@@ -64,7 +64,7 @@ export const registerSettings = function() {
     type: Boolean
   });
 
-  game.settings.register("Tsamys-Secret-Rolls", "hideMedicine", {
+  game.settings.register("tsamys-secret-rolls", "hideMedicine", {
     name: "Hide Medicine",
     scope: "world",
     config: true,
@@ -72,7 +72,7 @@ export const registerSettings = function() {
     type: Boolean
   });
 
-  game.settings.register("Tsamys-Secret-Rolls", "hideNature", {
+  game.settings.register("tsamys-secret-rolls", "hideNature", {
     name: "Hide Nature",
     scope: "world",
     config: true,
@@ -80,7 +80,7 @@ export const registerSettings = function() {
     type: Boolean
   });
 
-  game.settings.register("Tsamys-Secret-Rolls", "hideOccultism", {
+  game.settings.register("tsamys-secret-rolls", "hideOccultism", {
     name: "Hide Occultism",
     scope: "world",
     config: true,
@@ -88,7 +88,7 @@ export const registerSettings = function() {
     type: Boolean
   });
 
-  game.settings.register("Tsamys-Secret-Rolls", "hidePerformance", {
+  game.settings.register("tsamys-secret-rolls", "hidePerformance", {
     name: "Hide Performance",
     scope: "world",
     config: true,
@@ -96,7 +96,7 @@ export const registerSettings = function() {
     type: Boolean
   });
 
-  game.settings.register("Tsamys-Secret-Rolls", "hideReligion", {
+  game.settings.register("tsamys-secret-rolls", "hideReligion", {
     name: "Hide Religion",
     scope: "world",
     config: true,
@@ -104,7 +104,7 @@ export const registerSettings = function() {
     type: Boolean
   });
 
-  game.settings.register("Tsamys-Secret-Rolls", "hideSociety", {
+  game.settings.register("tsamys-secret-rolls", "hideSociety", {
     name: "Hide Society",
     scope: "world",
     config: true,
@@ -112,7 +112,7 @@ export const registerSettings = function() {
     type: Boolean
   });
 
-  game.settings.register("Tsamys-Secret-Rolls", "hideStealth", {
+  game.settings.register("tsamys-secret-rolls", "hideStealth", {
     name: "Hide Stealth",
     scope: "world",
     config: true,
@@ -120,7 +120,7 @@ export const registerSettings = function() {
     type: Boolean
   });
 
-  game.settings.register("Tsamys-Secret-Rolls", "hideSurvival", {
+  game.settings.register("tsamys-secret-rolls", "hideSurvival", {
     name: "Hide Survival",
     scope: "world",
     config: true,
@@ -128,7 +128,7 @@ export const registerSettings = function() {
     type: Boolean
   });
 
-  game.settings.register("Tsamys-Secret-Rolls", "hideThievery", {
+  game.settings.register("tsamys-secret-rolls", "hideThievery", {
     name: "Hide Thievery",
     scope: "world",
     config: true,
