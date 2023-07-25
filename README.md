@@ -8,7 +8,8 @@ This can be achieved by toggling the hide skill options in the game settings pag
 
 Current Issues:
 - The Lore Skill Check currently does not work due to their unique names however this will be resolved in the next version.
- 
+
+
 Future Plans:
 - Add More options for when to apply the blind roll
 - Add More types of rolls to apply blind roll to
