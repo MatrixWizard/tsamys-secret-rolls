@@ -1,11 +1,16 @@
-{
+
+    "id": "Tsamy-Secret-Rolls",
     "name": "Tsamy-Secret-Rolls",
     "title": "Tsamys Secret Rolls",
     "description": "Allows the GM to make all skill checks Blind",
     "author": "Tsamiyu",
     "version": "0.1",
-    "minimumCoreVersion": "0.8.6",
-    "compatibleCoreVersion": "0.11",  
+    "minimumCoreVersion" : "10",
+    "compatibleCoreVersion" : 10,
+    "compatibility": {
+        "minimum": 10,
+        "verified": "11"
+    },
     "esmodules": [ 
         "main.js"
     ],
