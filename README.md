@@ -4,6 +4,7 @@ A Simple module for the Pathfinder 2nd Edition system that allows the GM to set 
 
 
 This can be achieved by toggling the hide skill options in the game settings page.
+![Option Page](images/Tsamysrolls.JPG)
 
 Current Issues:
 - The Lore Skill Check currently does not work due to their unique names however this will be resolved in the next version.
