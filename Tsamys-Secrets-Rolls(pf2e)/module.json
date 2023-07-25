@@ -1,0 +1,17 @@
+{
+    "name": "Tsamys Secret Rolls",
+    "title": "Pathfinder 2e Blind Rolls",
+    "description": "Allows the GM to make all skill checks Blind",
+    "author": "Tsamiyu",
+    "version": "0.1",
+    "minimumCoreVersion": "0.8.6",
+    "compatibleCoreVersion": "0.11",  
+    "esmodules": [ 
+        "main.js"
+    ],
+    "socket" : true,
+    "systems": ["pf2e"],
+    "url":"",
+    "manifest":"",
+    "download":""
+  }
