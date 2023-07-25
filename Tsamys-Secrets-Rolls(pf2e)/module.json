@@ -11,7 +11,7 @@
     ],
     "socket" : true,
     "systems": ["pf2e"],
-    "url":"",
-    "manifest":"",
+    "url":"https://github.com/MatrixWizard/Tsamys-Secret-Rolls-pf2e-/edit/main/Tsamys-Secrets-Rolls(pf2e)",
+    "manifest":"https://github.com/MatrixWizard/Tsamys-Secret-Rolls-pf2e-/tree/main/Tsamys-Secrets-Rolls(pf2e)",
     "download":""
   }
