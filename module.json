@@ -1,32 +1,40 @@
 {
-    "id": "tsamys-secret-rolls",
-    "name": "tsamys-secret-rolls",
-    "title": "Tsamys Secret Rolls",
-    "description": "Allows the GM to make specific skill checks Blind",
-    "authors": [
-        { "name": "Tsamiyu" }
-    ],
-    "version": "0.1",
-    "compatibility": {
-        "minimum": 10,
-        "verified": "11"
-    },
-    "esmodules": [ 
-        "main.js"
-    ],
-    "socket" : true,
-    "relationships": {
-        "systems": [{
-          "id": "pf2e",
-          "type": "system",
-          "manifest": "https://github.com/foundryvtt/pf2e/releases/latest/download/system.json",
+  "id": "tsamys-secret-rolls",
+  "name": "tsamys-secret-rolls",
+  "title": "Tsamys Secret Rolls",
+  "description": "Allows the GM to make specific skill checks Blind",
+  "authors": [
+      { "name": "Tsamsiyu" }
+  ],
+  "version": "0.2",
+  "compatibility": {
+      "minimum": 10,
+      "verified": "11"
+  },
+  "esmodules": [ 
+      "main.js"
+  ],
+  "socket" : true,
+  "relationships": {
+      "systems": [
+        {
+          "id": "dnd5e",
+          "manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json",
           "compatibility": {
-            "minimum": "4.7.0",
-            "verified": "5.2.2"
+            "minimum": "2.1.2",
+            "verified": "2.2.2"
           }
-        }]
-      },
-    "url":"https://github.com/MatrixWizard/tsamys-secret-rolls-pf2e",
-    "manifest":"https://github.com/MatrixWizard/tsamys-secret-rolls-pf2e/raw/main/module.json",
-    "download":"https://github.com/MatrixWizard/Tsamys-Secret-Rolls-pf2e-/archive/refs/heads/main.zip"
-  }
+        },{
+        "id": "pf2e",
+        "type": "system",
+        "manifest": "https://github.com/foundryvtt/pf2e/releases/latest/download/system.json",
+        "compatibility": {
+          "minimum": "4.7.0",
+          "verified": "5.2.2"
+        }
+      }]
+    },
+  "url":"https://github.com/MatrixWizard/tsamys-secret-rolls",
+  "manifest":"https://github.com/MatrixWizard/tsamys-secret-rolls/raw/main/module.json",
+  "download":"https://github.com/MatrixWizard/Tsamys-Secret-Rolls/archive/refs/heads/main.zip"
+}
