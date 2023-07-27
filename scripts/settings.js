@@ -94,7 +94,7 @@ export const registerSettingsPf2e = function() {
     config: true,
     default: false,
     type: Boolean
-  });\\
+  });
 
   game.settings.register("tsamys-secret-rolls", "hidePerformance", {
     name: "Hide Performance",
