@@ -6,7 +6,7 @@
   "authors": [
       { "name": "Tsamsiyu" }
   ],
-  "version": "0.2",
+  "version": "0.3",
   "compatibility": {
       "minimum": 10,
       "verified": "11"
