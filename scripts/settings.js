@@ -143,9 +143,42 @@ export const registerSettingsPf2e = function() {
     default: false,
     type: Boolean
   });
+
+  game.settings.register("tsamys-secret-rolls", "hideFortitude", {
+    name: "Hide Fortitude Saves",
+    scope: "world",
+    config: true,
+    default: false,
+    type: Boolean
+  });
+
+  game.settings.register("tsamys-secret-rolls", "hideReflex", {
+    name: "Hide Reflex Saves",
+    scope: "world",
+    config: true,
+    default: false,
+    type: Boolean
+  });
+
+  game.settings.register("tsamys-secret-rolls", "hideWill", {
+    name: "Hide Will Saves",
+    scope: "world",
+    config: true,
+    default: false,
+    type: Boolean
+  });
 }
 
 export const registerSettingsDnd5e = function () {
+
+  game.settings.register("tsamys-secret-rolls", "hideDeathSaves", {
+    name: "Hide Death Saves",
+    scope: "world",
+    config: true,
+    default: false,
+    type: Boolean
+  });
+
   game.settings.register("tsamys-secret-rolls", "hideAcrobatics", {
     name: "Hide Acrobatics",
     scope: "world",

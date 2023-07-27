@@ -2,7 +2,7 @@
 
 
 
-A Simple module originally created for the Pathfinder 2nd Edition system but also works with D&D5e that allows the GM to set specific skill checks to always be blind GM rolls. 
+A Simple module originally created for the Pathfinder 2nd Edition system but also works with D&D5e that allows the GM to set specific rolls to always be blind GM rolls. 
 
 
 This can be achieved by toggling the hide skill options in the game settings page.

@@ -5,12 +5,10 @@ import { registerSettingsPf2e, registerSettingsDnd5e } from "./scripts/settings.
 Hooks.on('ready', () => {
   console.log("Registering...")
   if(game.system.id ==="pf2e"){
-    console.log(game.system.id)
     registerSettingsPf2e();
     startPf2e();
   }
   if(game.system.id === "dnd5e"){
-    console.log(game.system.id)
     registerSettingsDnd5e();
     startDnd5e()
   }
@@ -44,11 +42,17 @@ function startPf2e(){
     if (rawMessage.flavor.includes("Attribute Check")){
       if(game.settings.get("tsamys-secret-rolls", "hidePerception") && rawMessage.flavor.includes("Perception")){rawMessage.applyRollMode("blindroll");}
 	  }
+    if (rawMessage.flavor.includes("Saving Throw")){
+      if(game.settings.get("tsamys-secret-rolls", "hideFortitude") && rawMessage.flavor.includes("Fortitude")){rawMessage.applyRollMode("blindroll");}
+      if(game.settings.get("tsamys-secret-rolls", "hideReflex") && rawMessage.flavor.includes("Reflex")){rawMessage.applyRollMode("blindroll");}
+      if(game.settings.get("tsamys-secret-rolls", "hideWill") && rawMessage.flavor.includes("Will")){rawMessage.applyRollMode("blindroll");}
+	  }
   })
 }
 
 function startDnd5e(){
   Hooks.on("preCreateChatMessage", async (rawMessage) => {
+    console.log(rawMessage)
     if (rawMessage.flavor.includes("Skill Check")){
       if(game.settings.get("tsamys-secret-rolls", "hideAcrobatics") && rawMessage.flavor.includes("Acrobatics")){rawMessage.applyRollMode("blindroll");}
       if(game.settings.get("tsamys-secret-rolls", "hideAnimalHandling") && rawMessage.flavor.includes("Animal Handling")){rawMessage.applyRollMode("blindroll");}
@@ -68,6 +72,9 @@ function startDnd5e(){
       if(game.settings.get("tsamys-secret-rolls", "hideSleightofHand") && rawMessage.flavor.includes("Sleight of Hand")){rawMessage.applyRollMode("blindroll");}
       if(game.settings.get("tsamys-secret-rolls", "hideStealth") && rawMessage.flavor.includes("Stealth")){rawMessage.applyRollMode("blindroll");}
       if(game.settings.get("tsamys-secret-rolls", "hideSurvival") && rawMessage.flavor.includes("Survival")){rawMessage.applyRollMode("blindroll");}
+    }
+    if (rawMessage.flavor.includes("Death Saving Throw")){
+      if(game.settings.get("tsamys-secret-rolls", "hideDeathSaves")){rawMessage.applyRollMode("blindroll");}
     }
   })
 }
