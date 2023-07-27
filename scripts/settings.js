@@ -88,6 +88,14 @@ export const registerSettingsPf2e = function() {
     type: Boolean
   });
 
+  game.settings.register("tsamys-secret-rolls", "hidePerception", {
+    name: "Hide Perception",
+    scope: "world",
+    config: true,
+    default: false,
+    type: Boolean
+  });\\
+
   game.settings.register("tsamys-secret-rolls", "hidePerformance", {
     name: "Hide Performance",
     scope: "world",
