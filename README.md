@@ -1,6 +1,6 @@
 <h1>Tsamys Secret Rolls</h1>
 
-Fork to include Perception in PF2e system
+
 
 A Simple module originally created for the Pathfinder 2nd Edition system but also works with D&D5e that allows the GM to set specific skill checks to always be blind GM rolls. 
 
@@ -17,4 +17,5 @@ Future Plans:
 - Add More options for when to apply the blind roll
 - Add More types of rolls to apply blind roll to
 
-
+Credits:
+- Cilise: Added support for Perception (pf2e)
