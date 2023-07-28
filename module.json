@@ -2,11 +2,11 @@
   "id": "tsamys-secret-rolls",
   "name": "tsamys-secret-rolls",
   "title": "Tsamys Secret Rolls",
-  "description": "Allows the GM to make specific rolls Blind Globally",
+  "description": "Allows the GM to make specific rolls Blind Globally or allows for specifc players to make their rolls blind",
   "authors": [
       { "name": "Tsamsiyu" }
   ],
-  "version": "0.3",
+  "version": "0.4",
   "compatibility": {
       "minimum": 10,
       "verified": "11"

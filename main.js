@@ -1,16 +1,21 @@
 //CONFIG.debug.hooks = true
-import { registerSettingsPf2e, registerSettingsDnd5e } from "./scripts/settings.js";
+import { registerMainSettings, registerSettingsPf2e, registerSettingsDnd5e  } from "./scripts/settings.js";
 // Handle-socket
 
 Hooks.on('ready', () => {
+  registerMainSettings();
   console.log("Registering...")
+  let scope = "world"
+  if(game.settings.get("tsamys-secret-rolls", "makeClientSide")){
+    scope = "client"
+  }
   if(game.system.id ==="pf2e"){
-    registerSettingsPf2e();
-    startPf2e();
+      registerSettingsPf2e(scope);
+      startPf2e();
   }
   if(game.system.id === "dnd5e"){
-    registerSettingsDnd5e();
-    startDnd5e()
+      registerSettingsDnd5e(scope);
+      startDnd5e()
   }
 
   game.socket.on('module.tsamys-secret-rolls', async (data) => {
@@ -52,7 +57,6 @@ function startPf2e(){
 
 function startDnd5e(){
   Hooks.on("preCreateChatMessage", async (rawMessage) => {
-    console.log(rawMessage)
     if (rawMessage.flavor.includes("Skill Check")){
       if(game.settings.get("tsamys-secret-rolls", "hideAcrobatics") && rawMessage.flavor.includes("Acrobatics")){rawMessage.applyRollMode("blindroll");}
       if(game.settings.get("tsamys-secret-rolls", "hideAnimalHandling") && rawMessage.flavor.includes("Animal Handling")){rawMessage.applyRollMode("blindroll");}

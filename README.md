@@ -2,7 +2,7 @@
 
 
 
-A Simple module originally created for the Pathfinder 2nd Edition system but also works with D&D5e that allows the GM to set specific rolls to always be blind GM rolls. 
+A Simple module originally created for the Pathfinder 2nd Edition system but also works with D&D5e that allows the GM to set specific rolls to always be blind GM rolls or for each player to set their own roles blind. 
 
 
 This can be achieved by toggling the hide skill options in the game settings page.
@@ -16,6 +16,8 @@ Current Issues:
 Future Plans:
 - Add More options for when to apply the blind roll
 - Add More types of rolls to apply blind roll to
+- Add Ability to apply to specific actors (added v0.4)
+- Add Support for more systems
 
 Credits:
 - Cilise: Added support for Perception (pf2e)

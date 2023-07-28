@@ -1,8 +1,19 @@
-export const registerSettingsPf2e = function() {
+export const registerMainSettings = function() {
+  game.settings.register("tsamys-secret-rolls", "makeClientSide", {
+    name: "Make Client Side",
+    hint: "Turning this on will change the options from being global to client specific, if clients cant see the new menu simply get them to refresh",
+    scope: "world",
+    config: true,
+    default: false,
+    type: Boolean,
+    onChange: foundry.utils.debouncedReload
+  });
+}
 
+export const registerSettingsPf2e = function(scope) {
   game.settings.register("tsamys-secret-rolls", "hideAcrobatics", {
     name: "Hide Acrobatics",
-    scope: "world",
+    scope: scope,
     config: true,
     default: false,
     type: Boolean
@@ -10,7 +21,7 @@ export const registerSettingsPf2e = function() {
 
   game.settings.register("tsamys-secret-rolls", "hideArcana", {
     name: "Hide Arcana",
-    scope: "world",
+    scope: scope,
     config: true,
     default: false,
     type: Boolean
@@ -18,7 +29,7 @@ export const registerSettingsPf2e = function() {
 
   game.settings.register("tsamys-secret-rolls", "hideAthletics", {
     name: "Hide Athletics",
-    scope: "world",
+    scope: scope,
     config: true,
     default: false,
     type: Boolean
@@ -26,7 +37,7 @@ export const registerSettingsPf2e = function() {
 
   game.settings.register("tsamys-secret-rolls", "hideCrafting", {
     name: "Hide Crafting",
-    scope: "world",
+    scope: scope,
     config: true,
     default: false,
     type: Boolean
@@ -34,7 +45,7 @@ export const registerSettingsPf2e = function() {
 
   game.settings.register("tsamys-secret-rolls", "hideDeception", {
     name: "Hide Deception",
-    scope: "world",
+    scope: scope,
     config: true,
     default: false,
     type: Boolean
@@ -42,7 +53,7 @@ export const registerSettingsPf2e = function() {
 
   game.settings.register("tsamys-secret-rolls", "hideDiplomacy", {
     name: "Hide Diplomacy",
-    scope: "world",
+    scope: scope,
     config: true,
     default: false,
     type: Boolean
@@ -50,7 +61,7 @@ export const registerSettingsPf2e = function() {
 
   game.settings.register("tsamys-secret-rolls", "hideIntimidation", {
     name: "Hide Intimidation",
-    scope: "world",
+    scope: scope,
     config: true,
     default: false,
     type: Boolean
@@ -58,7 +69,7 @@ export const registerSettingsPf2e = function() {
 
   game.settings.register("tsamys-secret-rolls", "hideLore", {
     name: "Hide Lore",
-    scope: "world",
+    scope: scope,
     config: true,
     default: false,
     type: Boolean
@@ -66,7 +77,7 @@ export const registerSettingsPf2e = function() {
 
   game.settings.register("tsamys-secret-rolls", "hideMedicine", {
     name: "Hide Medicine",
-    scope: "world",
+    scope: scope,
     config: true,
     default: false,
     type: Boolean
@@ -74,7 +85,7 @@ export const registerSettingsPf2e = function() {
 
   game.settings.register("tsamys-secret-rolls", "hideNature", {
     name: "Hide Nature",
-    scope: "world",
+    scope: scope,
     config: true,
     default: false,
     type: Boolean
@@ -82,7 +93,7 @@ export const registerSettingsPf2e = function() {
 
   game.settings.register("tsamys-secret-rolls", "hideOccultism", {
     name: "Hide Occultism",
-    scope: "world",
+    scope: scope,
     config: true,
     default: false,
     type: Boolean
@@ -90,7 +101,7 @@ export const registerSettingsPf2e = function() {
 
   game.settings.register("tsamys-secret-rolls", "hidePerception", {
     name: "Hide Perception",
-    scope: "world",
+    scope: scope,
     config: true,
     default: false,
     type: Boolean
@@ -98,7 +109,7 @@ export const registerSettingsPf2e = function() {
 
   game.settings.register("tsamys-secret-rolls", "hidePerformance", {
     name: "Hide Performance",
-    scope: "world",
+    scope: scope,
     config: true,
     default: false,
     type: Boolean
@@ -106,7 +117,7 @@ export const registerSettingsPf2e = function() {
 
   game.settings.register("tsamys-secret-rolls", "hideReligion", {
     name: "Hide Religion",
-    scope: "world",
+    scope: scope,
     config: true,
     default: false,
     type: Boolean
@@ -114,7 +125,7 @@ export const registerSettingsPf2e = function() {
 
   game.settings.register("tsamys-secret-rolls", "hideSociety", {
     name: "Hide Society",
-    scope: "world",
+    scope: scope,
     config: true,
     default: false,
     type: Boolean
@@ -122,7 +133,7 @@ export const registerSettingsPf2e = function() {
 
   game.settings.register("tsamys-secret-rolls", "hideStealth", {
     name: "Hide Stealth",
-    scope: "world",
+    scope: scope,
     config: true,
     default: false,
     type: Boolean
@@ -130,7 +141,7 @@ export const registerSettingsPf2e = function() {
 
   game.settings.register("tsamys-secret-rolls", "hideSurvival", {
     name: "Hide Survival",
-    scope: "world",
+    scope: scope,
     config: true,
     default: false,
     type: Boolean
@@ -138,7 +149,7 @@ export const registerSettingsPf2e = function() {
 
   game.settings.register("tsamys-secret-rolls", "hideThievery", {
     name: "Hide Thievery",
-    scope: "world",
+    scope: scope,
     config: true,
     default: false,
     type: Boolean
@@ -146,7 +157,7 @@ export const registerSettingsPf2e = function() {
 
   game.settings.register("tsamys-secret-rolls", "hideFortitude", {
     name: "Hide Fortitude Saves",
-    scope: "world",
+    scope: scope,
     config: true,
     default: false,
     type: Boolean
@@ -154,7 +165,7 @@ export const registerSettingsPf2e = function() {
 
   game.settings.register("tsamys-secret-rolls", "hideReflex", {
     name: "Hide Reflex Saves",
-    scope: "world",
+    scope: scope,
     config: true,
     default: false,
     type: Boolean
@@ -162,18 +173,18 @@ export const registerSettingsPf2e = function() {
 
   game.settings.register("tsamys-secret-rolls", "hideWill", {
     name: "Hide Will Saves",
-    scope: "world",
+    scope: scope,
     config: true,
     default: false,
     type: Boolean
   });
 }
 
-export const registerSettingsDnd5e = function () {
+export const registerSettingsDnd5e = function (scope) {
 
   game.settings.register("tsamys-secret-rolls", "hideDeathSaves", {
     name: "Hide Death Saves",
-    scope: "world",
+    scope: scope,
     config: true,
     default: false,
     type: Boolean
@@ -181,7 +192,7 @@ export const registerSettingsDnd5e = function () {
 
   game.settings.register("tsamys-secret-rolls", "hideAcrobatics", {
     name: "Hide Acrobatics",
-    scope: "world",
+    scope: scope,
     config: true,
     default: false,
     type: Boolean
@@ -189,7 +200,7 @@ export const registerSettingsDnd5e = function () {
 
   game.settings.register("tsamys-secret-rolls", "hideAnimalHandling", {
     name: "Hide Animal Handling",
-    scope: "world",
+    scope: scope,
     config: true,
     default: false,
     type: Boolean
@@ -197,7 +208,7 @@ export const registerSettingsDnd5e = function () {
 
   game.settings.register("tsamys-secret-rolls", "hideArcana", {
     name: "Hide Arcana",
-    scope: "world",
+    scope: scope,
     config: true,
     default: false,
     type: Boolean
@@ -205,7 +216,7 @@ export const registerSettingsDnd5e = function () {
 
   game.settings.register("tsamys-secret-rolls", "hideAthletics", {
     name: "Hide Athletics",
-    scope: "world",
+    scope: scope,
     config: true,
     default: false,
     type: Boolean
@@ -214,7 +225,7 @@ export const registerSettingsDnd5e = function () {
 
   game.settings.register("tsamys-secret-rolls", "hideDeception", {
     name: "Hide Deception",
-    scope: "world",
+    scope: scope,
     config: true,
     default: false,
     type: Boolean
@@ -222,7 +233,7 @@ export const registerSettingsDnd5e = function () {
 
   game.settings.register("tsamys-secret-rolls", "hideHistory", {
     name: "Hide History",
-    scope: "world",
+    scope: scope,
     config: true,
     default: false,
     type: Boolean
@@ -230,7 +241,7 @@ export const registerSettingsDnd5e = function () {
 
   game.settings.register("tsamys-secret-rolls", "hideInsight", {
     name: "Hide Insight",
-    scope: "world",
+    scope: scope,
     config: true,
     default: false,
     type: Boolean
@@ -238,7 +249,7 @@ export const registerSettingsDnd5e = function () {
 
   game.settings.register("tsamys-secret-rolls", "hideIntimidation", {
     name: "Hide Intimidation",
-    scope: "world",
+    scope: scope,
     config: true,
     default: false,
     type: Boolean
@@ -246,7 +257,7 @@ export const registerSettingsDnd5e = function () {
 
   game.settings.register("tsamys-secret-rolls", "hideInvestigation", {
     name: "Hide Investigation",
-    scope: "world",
+    scope: scope,
     config: true,
     default: false,
     type: Boolean
@@ -254,7 +265,7 @@ export const registerSettingsDnd5e = function () {
 
   game.settings.register("tsamys-secret-rolls", "hideMedicine", {
     name: "Hide Medicine",
-    scope: "world",
+    scope: scope,
     config: true,
     default: false,
     type: Boolean
@@ -262,7 +273,7 @@ export const registerSettingsDnd5e = function () {
 
   game.settings.register("tsamys-secret-rolls", "hideNature", {
     name: "Hide Nature",
-    scope: "world",
+    scope: scope,
     config: true,
     default: false,
     type: Boolean
@@ -270,7 +281,7 @@ export const registerSettingsDnd5e = function () {
 
   game.settings.register("tsamys-secret-rolls", "hidePerception", {
     name: "Hide Perception",
-    scope: "world",
+    scope: scope,
     config: true,
     default: false,
     type: Boolean
@@ -278,7 +289,7 @@ export const registerSettingsDnd5e = function () {
 
   game.settings.register("tsamys-secret-rolls", "hidePerformance", {
     name: "Hide Performance",
-    scope: "world",
+    scope: scope,
     config: true,
     default: false,
     type: Boolean
@@ -286,7 +297,7 @@ export const registerSettingsDnd5e = function () {
 
   game.settings.register("tsamys-secret-rolls", "hidePersuasion", {
     name: "Hide Persuasion",
-    scope: "world",
+    scope: scope,
     config: true,
     default: false,
     type: Boolean
@@ -294,7 +305,7 @@ export const registerSettingsDnd5e = function () {
 
   game.settings.register("tsamys-secret-rolls", "hideReligion", {
     name: "Hide Religion",
-    scope: "world",
+    scope: scope,
     config: true,
     default: false,
     type: Boolean
@@ -302,7 +313,7 @@ export const registerSettingsDnd5e = function () {
 
   game.settings.register("tsamys-secret-rolls", "hideSleightofHand", {
     name: "Hide Sleight of Hand",
-    scope: "world",
+    scope: scope,
     config: true,
     default: false,
     type: Boolean
@@ -310,7 +321,7 @@ export const registerSettingsDnd5e = function () {
 
   game.settings.register("tsamys-secret-rolls", "hideStealth", {
     name: "Hide Stealth",
-    scope: "world",
+    scope: scope,
     config: true,
     default: false,
     type: Boolean
@@ -318,7 +329,7 @@ export const registerSettingsDnd5e = function () {
 
   game.settings.register("tsamys-secret-rolls", "hideSurvival", {
     name: "Hide Survival",
-    scope: "world",
+    scope: scope,
     config: true,
     default: false,
     type: Boolean
