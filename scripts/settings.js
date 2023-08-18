@@ -155,6 +155,30 @@ export const registerSettingsPf2e = function(scope) {
     type: Boolean
   });
 
+  game.settings.register("tsamys-secret-rolls", "hideAvoidNotice", {
+    name: "Hide Avoid Notice",
+    scope: scope,
+    config: true,
+    default: false,
+    type: Boolean
+  });
+
+  game.settings.register("tsamys-secret-rolls", "hideDiversion", {
+    name: "Hide Diversion",
+    scope: scope,
+    config: true,
+    default: false,
+    type: Boolean
+  });
+
+  game.settings.register("tsamys-secret-rolls", "hideDisableDevice", {
+    name: "Hide Disable Device",
+    scope: scope,
+    config: true,
+    default: false,
+    type: Boolean
+  });
+
   game.settings.register("tsamys-secret-rolls", "hideFortitude", {
     name: "Hide Fortitude Saves",
     scope: scope,
