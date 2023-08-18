@@ -194,7 +194,7 @@ export const registerSettingsPf2e = function(scope) {
     default: false,
     type: Boolean
   });
-  
+
   game.settings.register("tsamys-secret-rolls", "hideFortitude", {
     name: "Hide Fortitude Saves",
     scope: scope,
