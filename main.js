@@ -60,6 +60,14 @@ function startPf2e(){
       if(game.settings.get("tsamys-secret-rolls", "hideDisableDevice") && rawMessage.flavor.includes("Disable Device")){rawMessage.applyRollMode("blindroll");}
 	  }
 
+    if (rawMessage.flavor.includes("Pick a Lock")){
+      if(game.settings.get("tsamys-secret-rolls", "hidePickLock") && rawMessage.flavor.includes("Pick a Lock")){rawMessage.applyRollMode("blindroll");}
+	  }
+
+    if (rawMessage.flavor.includes("Steal")){
+      if(game.settings.get("tsamys-secret-rolls", "hideSteal") && rawMessage.flavor.includes("Steal")){rawMessage.applyRollMode("blindroll");}
+	  }
+
     if (rawMessage.flavor.includes("Saving Throw")){
       if(game.settings.get("tsamys-secret-rolls", "hideFortitude") && rawMessage.flavor.includes("Fortitude")){rawMessage.applyRollMode("blindroll");}
       if(game.settings.get("tsamys-secret-rolls", "hideReflex") && rawMessage.flavor.includes("Reflex")){rawMessage.applyRollMode("blindroll");}
