@@ -34,7 +34,7 @@
         }
       }]
     },
-  "url":"https://github.com/MatrixWizard/tsamys-secret-rolls",
-  "manifest":"https://github.com/MatrixWizard/tsamys-secret-rolls/raw/main/module.json",
-  "download":"https://github.com/MatrixWizard/Tsamys-Secret-Rolls/archive/refs/heads/main.zip"
+  "url":"https://github.com/cilise/tsamys-secret-rolls",
+  "manifest":"https://github.com/cilise/tsamys-secret-rolls/raw/main/module.json",
+  "download":"https://github.com/cilise/tsamys-secret-rolls/archive/refs/heads/main.zip"
 }
