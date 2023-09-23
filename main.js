@@ -42,11 +42,31 @@ function startPf2e(){
       if(game.settings.get("tsamys-secret-rolls", "hideSociety") && rawMessage.flavor.includes("Society")){rawMessage.applyRollMode("blindroll");}
       if(game.settings.get("tsamys-secret-rolls", "hideStealth") && rawMessage.flavor.includes("Stealth")){rawMessage.applyRollMode("blindroll");}
       if(game.settings.get("tsamys-secret-rolls", "hideSurvival") && rawMessage.flavor.includes("Survival")){rawMessage.applyRollMode("blindroll");}
-      if(game.settings.get("tsamys-secret-rolls", "hideThievery") && rawMessage.flavor.includes("Thievery")){rawMessage.applyRollMode("blindroll");}
-    }
+      if(game.settings.get("tsamys-secret-rolls", "hideThievery") && rawMessage.flavor.includes("Thievery")){rawMessage.applyRollMode("blindroll");}  
+      }
     if (rawMessage.flavor.includes("Perception Check")){
       if(game.settings.get("tsamys-secret-rolls", "hidePerception") && rawMessage.flavor.includes("Perception")){rawMessage.applyRollMode("blindroll");}
 	  }
+    if (rawMessage.flavor.includes("Avoid Notice")){
+      if(game.settings.get("tsamys-secret-rolls", "hideAvoidNotice") && rawMessage.flavor.includes("Avoid Notice")){rawMessage.applyRollMode("blindroll");}
+	  }
+
+    if (rawMessage.flavor.includes("Create a Diversion")){
+      if(game.settings.get("tsamys-secret-rolls", "hideDiversion") && rawMessage.flavor.includes("Create a Diversion")){rawMessage.applyRollMode("blindroll");}
+	  }
+
+    if (rawMessage.flavor.includes("Disable Device")){
+      if(game.settings.get("tsamys-secret-rolls", "hideDisableDevice") && rawMessage.flavor.includes("Disable Device")){rawMessage.applyRollMode("blindroll");}
+	  }
+
+    if (rawMessage.flavor.includes("Pick a Lock")){
+      if(game.settings.get("tsamys-secret-rolls", "hidePickLock") && rawMessage.flavor.includes("Pick a Lock")){rawMessage.applyRollMode("blindroll");}
+	  }
+
+    if (rawMessage.flavor.includes("Steal")){
+      if(game.settings.get("tsamys-secret-rolls", "hideSteal") && rawMessage.flavor.includes("Steal")){rawMessage.applyRollMode("blindroll");}
+	  }
+
     if (rawMessage.flavor.includes("Saving Throw")){
       if(game.settings.get("tsamys-secret-rolls", "hideFortitude") && rawMessage.flavor.includes("Fortitude")){rawMessage.applyRollMode("blindroll");}
       if(game.settings.get("tsamys-secret-rolls", "hideReflex") && rawMessage.flavor.includes("Reflex")){rawMessage.applyRollMode("blindroll");}

@@ -35,8 +35,24 @@ export const registerSettingsPf2e = function(scope) {
     type: Boolean
   });
 
+  game.settings.register("tsamys-secret-rolls", "hideAvoidNotice", {
+    name: "Hide Avoid Notice",
+    scope: scope,
+    config: true,
+    default: false,
+    type: Boolean
+  });
+
   game.settings.register("tsamys-secret-rolls", "hideCrafting", {
     name: "Hide Crafting",
+    scope: scope,
+    config: true,
+    default: false,
+    type: Boolean
+  });
+
+  game.settings.register("tsamys-secret-rolls", "hideDiversion", {
+    name: "Hide Create a Diversion",
     scope: scope,
     config: true,
     default: false,
@@ -53,6 +69,14 @@ export const registerSettingsPf2e = function(scope) {
 
   game.settings.register("tsamys-secret-rolls", "hideDiplomacy", {
     name: "Hide Diplomacy",
+    scope: scope,
+    config: true,
+    default: false,
+    type: Boolean
+  });
+
+  game.settings.register("tsamys-secret-rolls", "hideDisableDevice", {
+    name: "Hide Disable Device",
     scope: scope,
     config: true,
     default: false,
@@ -115,6 +139,14 @@ export const registerSettingsPf2e = function(scope) {
     type: Boolean
   });
 
+  game.settings.register("tsamys-secret-rolls", "hidePickLock", {
+    name: "Hide Pick a Lock",
+    scope: scope,
+    config: true,
+    default: false,
+    type: Boolean
+  });
+
   game.settings.register("tsamys-secret-rolls", "hideReligion", {
     name: "Hide Religion",
     scope: scope,
@@ -125,6 +157,14 @@ export const registerSettingsPf2e = function(scope) {
 
   game.settings.register("tsamys-secret-rolls", "hideSociety", {
     name: "Hide Society",
+    scope: scope,
+    config: true,
+    default: false,
+    type: Boolean
+  });
+
+  game.settings.register("tsamys-secret-rolls", "hideSteal", {
+    name: "Hide Steal",
     scope: scope,
     config: true,
     default: false,
